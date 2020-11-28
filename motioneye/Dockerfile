@@ -8,7 +8,7 @@ RUN apt-get update \
       python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev \
       libavcodec57 libavdevice57 libavformat57 libavutil55 libmariadbclient18 \
       v4l-utils libmicrohttpd12 libswscale4 libwebp6 libwebpmux3 libpq5 \
-      python-setuptools python-wheel build-essential \
+      mosquitto-clients python-setuptools python-wheel build-essential \
     && curl -Lo /motion.deb https://github.com/Motion-Project/motion/releases/download/release-${MOTION_VERSION}/bionic_motion_${MOTION_VERSION}-1_amd64.deb \
     && dpkg -i /motion.deb \
     && rm -f /motion.deb \
