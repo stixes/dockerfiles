@@ -15,7 +15,7 @@ Installs most recent Motion and Motioneye software binaries from respective rele
     version: "2.4"
     services:
       motioneye:
-        image: stixes/motioneye:latest
+        image: stixes/motioneye-nvidia:latest
         restart: always
         runtime: nvidia
         environment:
